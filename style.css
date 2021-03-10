@@ -1,0 +1,236 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  color: #aeb6b4;
+  background-color: #7bdaf3;
+
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* utilities */
+.hidden {
+  display: none;
+}
+
+.low-opacity {
+  opacity: 0.5;
+}
+
+.app-name {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 1rem auto;
+  color: #fff;
+}
+
+/* create note */
+.create-note {
+  width: 32rem;
+  height: 36rem;
+  background-color: #ecfaf5;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.create-note .create-note__menu {
+  width: 100%;
+  height: 10%;
+  font-size: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-note .create-note__menu .fa-eye {
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.create-note .create-note__menu .fa-eye:active {
+  transform: scale(0.9) translateY(0.5rem);
+}
+
+.create-note .create-note__menu .fa-times {
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.create-note .create-note__menu .fa-times:active {
+  transform: scale(0.9) translateY(0.5rem);
+}
+
+.create-note__text {
+  width: 100%;
+  height: 70%;
+}
+
+.create-note__text .create-note__textarea {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(to right, #ffffff, #ecfaf5);
+  background: linear-gradient(to right, #ffffff, #ecfaf5);
+
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #9b9c9c;
+  padding: 2rem;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.create-note__save-note {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-note__save-note .create-note__save-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  background-color: #9ec862;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  padding: 1rem 6rem;
+  border-radius: 5rem;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(158, 200, 98, 0.8);
+  transition: all 0.2s;
+}
+
+.create-note__save-note .create-note__save-button:active {
+  transform: scale(0.9) translateY(0.5rem);
+}
+
+/* preview note */
+.preview-note {
+  width: 32rem;
+  height: 36rem;
+  background-color: #ecfaf5;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.preview-note .preview-note__heading {
+  width: 100%;
+  height: 10%;
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-note .preview-note__text {
+  width: 100%;
+  height: 90%;
+  background: -webkit-linear-gradient(to right, #ffffff, #ecfaf5);
+  background: linear-gradient(to right, #ffffff, #ecfaf5);
+}
+
+.preview-note .preview-note__textarea {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #9b9c9c;
+
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.preview-note .preview-note__textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* notes area */
+.note-content {
+  width: 32rem;
+  height: 36rem;
+  background-color: #ecfaf5;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.note-content .note-content__menu {
+  width: 100%;
+  height: 10%;
+  font-size: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.note-content .note-content__menu .fa-trash-alt {
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.note-content .note-content__menu .fa-trash-alt:active {
+  transform: scale(0.9) translateY(0.5rem);
+}
+
+.note-content .note-content__text {
+  width: 100%;
+  height: 90%;
+  background: -webkit-linear-gradient(to right, #ffffff, #ecfaf5);
+  background: linear-gradient(to right, #ffffff, #ecfaf5);
+}
+
+.note-content .note-content__text .note-content__textarea {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #9b9c9c;
+  padding: 2rem;
+
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.note-content .note-content__text .note-content__textarea::-webkit-scrollbar {
+  display: none;
+}
