@@ -31,6 +31,8 @@ saveNoteBtn.addEventListener("click", function (e) {
   e.preventDefault();
   const text = textArea.value;
 
+  if (!text) return;
+
   setStorage(text);
 
   textArea.value = "";
